@@ -1,0 +1,4 @@
+(executable
+ (public_name oHtMl)
+ (name main)
+ (libraries oHtMl))

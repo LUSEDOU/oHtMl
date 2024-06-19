@@ -1,6 +1,20 @@
-# dune init project oHtMl
+# dune test
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Shared cache location: /home/lusedou/.cache/dune/db
 # Workspace root: /home/lusedou/projects/oHtMl
 # Auto-detected concurrency: 4
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/lusedou/.opam/default/bin/ocamlc.opt -config > /tmp/dune_f5b6a2_output
+$ (cd _build/default && /home/lusedou/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I test/.test_oHtMl.eobjs/byte -no-alias-deps -opaque -o test/.test_oHtMl.eobjs/byte/dune__exe__Test_oHtMl.cmi -c -intf test/test_oHtMl.mli)
+$ (cd _build/default && /home/lusedou/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.test_oHtMl.eobjs/byte -I test/.test_oHtMl.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.test_oHtMl.eobjs/native/dune__exe__Test_oHtMl.cmx -c -impl test/test_oHtMl.ml)
+$ (cd _build/default && /home/lusedou/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_oHtMl.exe test/.test_oHtMl.eobjs/native/dune__exe__Test_oHtMl.cmx)
+$ (cd _build/default/test && ./test_oHtMl.exe)

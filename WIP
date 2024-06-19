@@ -1,0 +1,11 @@
+Task
+
+{{ path }}
+
+[ ] Read file
+[ ] Detect  `\{\{\s(.+?)\s\}\}`
+[ ] Extract path
+[ ] Find file
+[ ] If file exists, read file, and replace `\{\{\s(.+?)\s\}\}` with file content
+[ ] If don't continue to next file
+[ ] The new content saved in the output file
